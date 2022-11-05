@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="assets" inherit_id="point_of_sale.assets">
+      <xpath expr="." position="inside">
+        <script type="text/javascript" src="/bsi_pos_clear_cart/static/src/js/pos_clear_cart.js"></script>
+      </xpath>
+    </template>
+</odoo>
