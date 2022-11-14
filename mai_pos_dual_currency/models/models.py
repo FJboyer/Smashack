@@ -10,7 +10,7 @@ class PosPaymentMethod(models.Model):
 class PosPayment(models.Model):
 	_inherit="pos.payment"
 
-	usd_amt = fields.Float("USD $")
+	usd_amt = fields.Float("VEF Rate")
 
 
 class PosOrder(models.Model):

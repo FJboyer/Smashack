@@ -32,23 +32,25 @@ odoo.define('mai_pos_dual_currency.OrderWidget', function (require) {
 					let taxes_currency = 0;
 					let rate_company = parseFloat(this.env.pos.config.rate_company);
 					let show_currency_rate = parseFloat(this.env.pos.config.show_currency_rate);
-					if(this.env.pos.currency.name == "VEF"){
-						if(rate_company > show_currency_rate){
-							total_currency = total / rate_company;
-							taxes_currency = tax / rate_company;
-						}else if(rate_company < show_currency_rate){
-							if(show_currency_rate>0){
-								total_currency = total / show_currency_rate;
-								taxes_currency = tax / show_currency_rate;
-							}
-						}else{
-							total_currency = total;
-							taxes_currency = tax;
-						}
-					}else{
-						total_currency = total;
-						taxes_currency = tax;
-					}
+
+
+					// if(this.env.pos.currency.name == "VEF"){
+						// if(rate_company > show_currency_rate){
+							total_currency =  show_currency_rate * total / rate_company;
+							taxes_currency =  show_currency_rate * tax / rate_company; 
+						// }else if(rate_company < show_currency_rate){
+						// 	if(show_currency_rate>0){
+						// 		total_currency = total / show_currency_rate;
+						// 		taxes_currency = tax / show_currency_rate;
+						// 	}
+						// }else{
+						// 	total_currency = total;
+						// 	taxes_currency = tax;
+						// }
+					// }else{
+					// 	total_currency = total;
+					// 	taxes_currency = tax;
+					// }
 					let total_currency_text = '';
 					let taxes_currency_text = '';
 					if(this.env.pos.config.show_currency_position=='before'){

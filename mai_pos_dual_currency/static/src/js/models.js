@@ -23,35 +23,23 @@ odoo.define('mai_pos_dual_currency.models', function(require) {
 
 		add_paymentline: function(payment_method) {
 			this.assert_editable();
-			if (this.electronic_payment_in_progress()) {
-				return false;
-			} else {
-				var newPaymentline = new exports.Paymentline({},{order: this, payment_method:payment_method, pos: this.pos});
-				newPaymentline.set_amount(this.get_due());
-				this.paymentlines.add(newPaymentline);
-				this.select_paymentline(newPaymentline);
-				if(this.pos.config.cash_rounding){
-				  this.selected_paymentline.set_amount(0);
-				  this.selected_paymentline.set_amount(this.get_due());
-				}
-
-				if (payment_method.payment_terminal) {
-					newPaymentline.set_payment_status('pending');
-				}
-				return newPaymentline;
-			}
-		},
-
-		add_paymentline: function(payment_method) {
-			this.assert_editable();
 			let rate_company = this.pos.config.rate_company;
+			let show_currency_rate = this.pos.config.show_currency_rate;
 			if (this.electronic_payment_in_progress()) {
 				return false;
 			} else {
 				var newPaymentline = new models.Paymentline({},{order: this, payment_method:payment_method, pos: this.pos});
 				newPaymentline.set_amount(this.get_due());
 				if(payment_method.pago_usd){
-					newPaymentline.set_usd_amt(this.get_due()/rate_company);
+					let price = this.get_due();
+					// if(rate_company > show_currency_rate){
+					// 	price =  show_currency_rate * this.get_due();
+					// }
+					// else if(rate_company < show_currency_rate){
+					// 	price = this.get_due()/rate_company;
+					// }
+					price =  show_currency_rate * this.get_due();
+					newPaymentline.set_usd_amt(price);
 				}
 				this.paymentlines.add(newPaymentline);
 				this.select_paymentline(newPaymentline);

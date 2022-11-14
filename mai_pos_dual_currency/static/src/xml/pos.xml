@@ -102,8 +102,8 @@
 		<xpath expr="//t[@t-if='line.selected']/div[hasclass('paymentline')]/div[hasclass('payment-amount')]" position="after">
 			<div t-if="line.payment_method.pago_usd">
 				<t t-if="env.pos.config.show_dual_currency">
-					<t t-if="env.pos.currency.name == 'VEF'">
-						<t t-set="total_user_amount" t-value="0"/>
+					<!-- <t t-if="env.pos.currency.name == 'VEF'"> -->
+						<!-- <t t-set="total_user_amount" t-value="0"/>
 						<t t-if="env.pos.config.rate_company &gt; env.pos.config.show_currency_rate">
 							<t t-set="total_user_amount" 
 							t-value="line.get_amount()/ env.pos.config.rate_company"/>
@@ -112,10 +112,13 @@
 							<t t-set="total_user_amount"
 							t-value="line.get_amount() / env.pos.config.show_currency_rate"/>
 						</t>
-					</t>
-					<t t-else="">
-						<t t-set="total_user_amount" t-value="line.get_amount()"/>
-					</t>
+						<t t-else="">
+							<t t-set="total_user_amount" t-value="line.get_amount()"/>
+						</t> -->
+
+						<t t-set="total_user_amount"  t-value="line.get_amount() * env.pos.config.show_currency_rate"/>
+					<!-- </t> -->
+					
 					<span style="color: red;">/
 						<t t-if="env.pos.config.show_currency_position == 'before'">
 							<t t-esc="env.pos.config.show_currency_symbol"/>
@@ -132,8 +135,8 @@
 		<xpath expr="//t[@t-else='']/div[hasclass('paymentline')]/div[hasclass('payment-amount')]" position="after">
 			<div t-if="line.payment_method.pago_usd">
 				<t t-if="env.pos.config.show_dual_currency">
-					<t t-if="env.pos.currency.name == 'VEF'">
-						<t t-set="total_user_amount" t-value="0"/>
+					<!-- <t t-if="env.pos.currency.name == 'VEF'"> -->
+						<!-- <t t-set="total_user_amount" t-value="0"/>
 						<t t-if="env.pos.config.rate_company &gt; env.pos.config.show_currency_rate">
 						<t t-set="total_user_amount" 
 							t-value="line.get_amount()/ env.pos.config.rate_company"/>
@@ -142,10 +145,12 @@
 							<t t-set="total_user_amount"
 							t-value="line.get_amount() / env.pos.config.show_currency_rate"/>
 						</t>
-					</t>
-					<t t-else="">
-						<t t-set="total_user_amount" t-value="line.get_amount()"/>
-					</t>
+						<t t-else="">
+							<t t-set="total_user_amount" t-value="line.get_amount()"/>
+						</t> -->
+						<t t-set="total_user_amount"  t-value="line.get_amount() * env.pos.config.show_currency_rate"/>
+					<!-- </t> -->
+					
 
 					<span style="color: red;">/
 						<t t-if="env.pos.config.show_currency_position == 'before'">

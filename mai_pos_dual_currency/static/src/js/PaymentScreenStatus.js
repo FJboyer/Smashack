@@ -18,14 +18,14 @@ odoo.define('mai_pos_dual_currency.PaymentScreenStatus', function (require) {
 				let show_currency_rate = this.env.pos.config.show_currency_rate;
 				let price = val;
 				let	price_other_currency = price;
-				if(this.env.pos.currency.name == "VEF"){
-					if(rate_company > show_currency_rate){
-						price_other_currency = price / rate_company;
-					}
-					else if(rate_company < show_currency_rate){
-						price_other_currency = price / show_currency_rate;
-					}
-				}
+				// if(rate_company > show_currency_rate){
+				// 	price_other_currency = price * show_currency_rate / rate_company;
+				// }
+				// else if(rate_company < show_currency_rate){
+				// 	price_other_currency = price / show_currency_rate;
+				// }
+				price_other_currency = price * show_currency_rate / rate_company;
+
 				return price_other_currency;
 			}
 
