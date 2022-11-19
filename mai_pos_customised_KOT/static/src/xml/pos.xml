@@ -5,6 +5,10 @@
 
 		<xpath expr="//div[hasclass('pos-receipt-order-data')]" position="after">
 			<div>
+				Date : 
+				<span t-esc="changes.date" />
+			</div>
+			<div>
 				Customer : 
 				<span t-esc="changes.client" />
 			</div>
