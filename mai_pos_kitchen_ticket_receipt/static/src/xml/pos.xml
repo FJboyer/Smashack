@@ -2,7 +2,7 @@
 <templates id="point_of_sale.template" xml:space="preserve">
 
 	<t t-name="KitchenReciept" owl="1">
-		<div class="pos-receipt">
+		<div class="pos-receipt" style="display: grid;">
 			<div class="pos-receipt-contact">
 				<br/>
 				<br/>

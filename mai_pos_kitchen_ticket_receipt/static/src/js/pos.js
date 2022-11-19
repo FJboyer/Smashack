@@ -1,7 +1,6 @@
 odoo.define('mai_pos_kitchen_ticket_receipt.order', function (require) {
 "use strict";
     var core = require('web.core');
-    var screens = require('point_of_sale.screens');
     var models = require('point_of_sale.models');
     var QWeb = core.qweb;
     var _t = core._t;
