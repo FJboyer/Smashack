@@ -1,0 +1,9 @@
+
+.multiprint-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.multiprint-flex span{
+    margin-right:80% !important;
+}

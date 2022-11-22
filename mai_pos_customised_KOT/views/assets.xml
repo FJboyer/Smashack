@@ -6,6 +6,9 @@
 				<script type="text/javascript" src="/mai_pos_customised_KOT/static/src/js/models.js"/>
 				<script type="text/javascript" src="/mai_pos_customised_KOT/static/src/js/SubmitOrderButton.js"/>
 			</xpath>
+			<xpath expr="//link[@id='pos-stylesheet']" position="after">
+	            <link rel="stylesheet" href="/mai_pos_customised_KOT/static/src/css/pos.css"/>
+	        </xpath>
 		</template>
 	</data>
 </odoo>
