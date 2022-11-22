@@ -14,7 +14,7 @@
     'category': 'Point of Sale',
     'version': '14.0.1',
     # any module necessary for this one to work correctly
-    'depends': ['base', 'point_of_sale', 'pos_restaurant'],
+    'depends': ['base', 'point_of_sale', 'pos_restaurant','mai_pos_customised_KOT'],
     # always loaded
     'data': [
         'views/templates.xml',
