@@ -4,6 +4,6 @@
     justify-content: space-between;
 }
 
-.multiprint-flex span{
-    margin-right:80% !important;
+.multiprint-flex div{
+    margin-right:70% !important;
 }
