@@ -33,11 +33,11 @@
                     <t t-foreach="changes.cancelled" t-as="change">
                         <div class="multiprint-flex">
                             <t t-esc="change.qty"/>
-                            <div>
+                            <div style="display:flex;">
 	                            <span t-esc="change.name_wrapped[0]"/>
-	                            <!-- <t t-foreach="change.name_wrapped.slice(1)" t-as="wrapped_line">
+	                            <t t-foreach="change.name_wrapped.slice(1)" t-as="wrapped_line">
 						            <span t-esc="wrapped_line"/>
-						        </t> -->
+						        </t>
 						    </div>
                         </div>
                         <!-- <t t-call="NameWrapped"/> -->
@@ -67,11 +67,11 @@
                 <t t-foreach="changes.new" t-as="change">
                     <div class="multiprint-flex">
                         <t t-esc="change.qty"/>
-                        <div>
+                        <div style="display:flex;">
 	                        <span t-esc="change.name_wrapped[0]"/>
-	                        <!-- <t t-foreach="change.name_wrapped.slice(1)" t-as="wrapped_line">
+	                        <t t-foreach="change.name_wrapped.slice(1)" t-as="wrapped_line">
 					            <span t-esc="wrapped_line"/>
-					        </t> -->
+					        </t>
 					    </div>
                     </div>
                     <!-- <t t-call="NameWrapped"/> -->
