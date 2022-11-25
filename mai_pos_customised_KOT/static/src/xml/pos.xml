@@ -20,6 +20,8 @@
 				<span t-esc="changes.cashier" />
 			</div>
 		</xpath>
+		
+	</t>
 
-	
+
 </templates>
