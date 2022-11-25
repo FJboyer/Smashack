@@ -8,6 +8,7 @@ odoo.define('mai_pos_customised_KOT.models', function(require) {
 	var _t = core._t;
 	var Printer = require('point_of_sale.Printer').Printer;
 	var QWeb = core.qweb;
+    var field_utils = require('web.field_utils');
 
 	var _super_order = models.Order.prototype;
 	models.Order = models.Order.extend({
