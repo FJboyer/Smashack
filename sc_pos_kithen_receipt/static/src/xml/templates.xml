@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates id="template" inherit_id="point_of_sale.template">	
+	
+	<t t-name="KitchenReceiptButton" owl="1">
+		<span class="control-button kitchen-print">
+			<i class="fa fa-print"></i>
+			<span> </span>
+			<span>Print Kitchen Receipt</span>
+		</span>
+	</t>
+
+	<t t-name="CustomKitchenScreen" owl="1">
+		<div class="receipt-screen screen">
+			<div class="screen-content">
+				<div class="top-content">
+					<span class="button back" t-on-click="confirm">
+						<i class="fa fa-angle-double-left"></i>
+						<span> </span>
+						<span>Back</span>
+					</span>
+					<div class="top-content-center">
+						<h1>Kitchen Receipt Print</h1>
+					</div>
+					<span class="button next highlight" t-on-click="confirm">
+						<span>Ok</span>
+						<span> </span>
+						<i class="fa fa-angle-double-right"></i>
+					</span>
+				</div>
+				<div class="centered-content">
+					<div class="button print" t-on-click="printReceipt">
+						<i class="fa fa-print"></i>
+						<span> </span>
+						<span>Print</span>
+					</div>
+					<div class="pos-receipt-container">
+						<OrderKitchenReceipt order="currentOrder" t-ref="order-receipt"/>
+					</div>
+				</div>
+			</div>
+		</div>
+	</t>
+
+	<t t-name="OrderKitchenReceipt" owl="1">
+		<div class="pos-receipt kitchen">
+			<div style="font-size: 14px;">
+				<span><t t-esc="currentDate" /></span>
+				<span class="pos-receipt-right-align"><t t-esc="currentTime" /></span>
+			</div>
+			<h3 class="pos-receipt-center-align">
+				<t t-esc="receipt.company.name" />
+			</h3>
+			<div  class="pos-receipt-contact">
+				<t t-if="env.pos.company.street">
+					<span t-esc="env.pos.company.street" />
+					,
+				</t>
+				<t t-if="env.pos.company.street2">
+					<span t-esc="env.pos.company.street2" />
+					,
+				</t>
+				<t t-if="env.pos.company.city">
+					<span t-esc="env.pos.company.city" />
+				</t>
+				<t t-if="env.pos.company.zip">
+					 -
+					<span t-esc="env.pos.company.zip" />
+				</t>
+				<t t-if="env.pos.company.state_id">
+					<span t-esc="env.pos.company.state_id[1]" />
+				</t>
+				<t t-if="env.pos.company.country_id">
+					<span t-esc="env.pos.company.country_id[1]" />
+				</t>
+				<t t-if="receipt.company.phone">
+					<div>Tel:<t t-esc="receipt.company.phone" /></div>
+				</t>
+				<t t-if="receipt.company.vat">
+					<div><t t-esc="receipt.company.vat_label"/>:<t t-esc="receipt.company.vat" /></div>
+				</t>
+				<t t-if="receipt.company.email">
+					<div><t t-esc="receipt.company.email" /></div>
+				</t>
+				<t t-if="receipt.company.website">
+					<div><t t-esc="receipt.company.website" /></div>
+				</t>
+				<t t-if="receipt.header_html">
+					<t t-raw="receipt.header_html" />
+				</t>
+				<t t-if="!receipt.header_html and receipt.header">
+					<div><t t-esc="receipt.header" /></div>
+				</t>
+			</div>
+			<table style="width:100%;font-size: 14px;">
+				<tbody>
+					<!-- <tr>
+						<td>
+							Receipt#
+							<t t-esc="order.uid" />
+						</td>
+						<td style="text-align:right;">
+							<t t-if="receipt.table">
+								Table#
+								<t t-esc="receipt.table" />
+							</t>
+						</td>
+					</tr> -->
+					<!-- <tr>
+						<td>Served by: <t t-esc="receipt.cashier" /> </td>
+					</tr> -->
+					<tr t-if="TodayDate">
+						<td >
+							Date#
+						</td>
+						<td style='text-align: right;'>
+							<t t-esc="TodayDate" />
+						</td>
+					</tr>
+					<tr t-if="clientName">
+						<td >
+							Customer#
+						</td>
+						<td style='text-align: right;'>
+							<t t-esc="clientName" />
+						</td>
+					</tr>
+					<tr t-if="configName">
+						<td >
+							Served By#
+						</td>
+						<td style='text-align: right;'>
+							<t t-esc="configName" />
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<br />
+			<table class='receipt-orderlines' style="width:100%;font-size: 14px;">
+				<colgroup>
+					<col width='75%' />
+					<col width='25%' />
+				</colgroup>
+				<tbody>
+					<tr style="font-size: 16px;">
+						<th>Product</th>
+						<th style="text-align: right;">Unit</th>
+					</tr>
+
+					<tr t-foreach="orderlines" t-as="line">
+						<td class="pos-left-align">
+							<t t-esc="line.get_product().display_name" />
+							<t t-if="line.get_note()">
+				                <li class="info orderline-note" style="margin-left: 5%;">
+				                    <i class="fa fa-tag" role="img" aria-label="Note" title="Note"/>
+				                    <t t-esc="line.get_note()" />
+				                </li>
+				            </t>
+						</td>
+						<td style="text-align: right;">
+							<t t-esc="line.get_quantity()" />
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</t>
+
+</templates>
