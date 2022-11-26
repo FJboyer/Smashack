@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<odoo>
+	<data>
+		<template id="receipt_ext_js"  inherit_id="web.assets_backend">
+			<xpath expr="." position="inside">
+				<script type="text/javascript" src="/sc_pos_kithen_receipt/static/src/js/models.js"></script>
+				<script type="text/javascript" src="/sc_pos_kithen_receipt/static/src/js/Screens/custom_receipt.js"></script>
+				<script type="text/javascript" src="/sc_pos_kithen_receipt/static/src/js/Screens/print_button.js"></script>
+				<script type="text/javascript" src="/sc_pos_kithen_receipt/static/src/js/Screens/KitchenReceipt.js"></script>
+			</xpath>
+		</template>
+	</data>
+</odoo>
