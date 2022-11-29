@@ -3,7 +3,7 @@
     "description": """Using this module you can print POS Kitchen Receipt From front end""",
     'summary': 'Using this module you can print POS Kitchen Receipt From front end',
     'category': 'Point of Sale',    
-    'version': '14.1.1.1',
+    'version': '14.3.2.1',
     'sequence': 1,
     "author" : "DOTSPRIME",
     "email": 'dotsprime@gmail.com',
