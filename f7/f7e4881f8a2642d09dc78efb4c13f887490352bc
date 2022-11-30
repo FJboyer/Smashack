@@ -1,0 +1,94 @@
+
+.o_required_modifier.o_input, .o_required_modifier .o_input {
+  border-bottom: 2px solid #666666;
+}
+
+.o_field_widget .o_input_dropdown .o_dropdown_button {
+  position: absolute;
+  top: 0;
+  left: auto;
+  bottom: auto;
+  right: 0;
+}
+
+.o_field_widget.o_field_percent_pie .o_pie {
+  width: 44px;
+  height: 44px;
+}
+
+.o_field_widget.o_field_percent_pie .o_pie:after {
+  border: 1px solid #8f8f8f;
+}
+
+.o_field_widget.o_field_percent_pie .o_pie .o_pie_value {
+  position: absolute;
+  top: 4px;
+  left: auto;
+  bottom: auto;
+  right: 4px;
+  width: 36px;
+  height: 36px;
+  border: 1px solid #8f8f8f;
+  background-color: #f8f9fa;
+}
+
+.o_field_widget.oe_form_field_html.oe_form_field_html .note-editor {
+  border-color: #ced4da;
+}
+
+.o_field_widget.oe_form_field_html.oe_form_field_html .note-toolbar.panel-heading, .o_field_widget.oe_form_field_html.oe_form_field_html .popover-body {
+  border-color: #ced4da;
+  background: #f8f9fa;
+}
+
+.o_field_widget.oe_form_field_html.oe_form_field_html .note-toolbar.panel-heading .btn-secondary, .o_field_widget.oe_form_field_html.oe_form_field_html .note-toolbar.panel-heading .o_radio_hide_bullet label, .o_radio_hide_bullet .o_field_widget.oe_form_field_html.oe_form_field_html .note-toolbar.panel-heading label, .o_field_widget.oe_form_field_html.oe_form_field_html .popover-body .btn-secondary, .o_field_widget.oe_form_field_html.oe_form_field_html .popover-body .o_radio_hide_bullet label, .o_radio_hide_bullet .o_field_widget.oe_form_field_html.oe_form_field_html .popover-body label {
+  background: transparent;
+  border-color: transparent;
+  color: #666666;
+}
+
+.o_field_widget.oe_form_field_html.oe_form_field_html .note-toolbar.panel-heading .btn-secondary:hover, .o_field_widget.oe_form_field_html.oe_form_field_html .note-toolbar.panel-heading .o_radio_hide_bullet label:hover, .o_radio_hide_bullet .o_field_widget.oe_form_field_html.oe_form_field_html .note-toolbar.panel-heading label:hover, .o_field_widget.oe_form_field_html.oe_form_field_html .note-toolbar.panel-heading .btn-secondary:focus, .o_field_widget.oe_form_field_html.oe_form_field_html .note-toolbar.panel-heading .o_radio_hide_bullet label:focus, .o_radio_hide_bullet .o_field_widget.oe_form_field_html.oe_form_field_html .note-toolbar.panel-heading label:focus, .o_field_widget.oe_form_field_html.oe_form_field_html .note-toolbar.panel-heading .btn-secondary.focus, .o_field_widget.oe_form_field_html.oe_form_field_html .note-toolbar.panel-heading .o_radio_hide_bullet label.focus, .o_radio_hide_bullet .o_field_widget.oe_form_field_html.oe_form_field_html .note-toolbar.panel-heading label.focus, .o_field_widget.oe_form_field_html.oe_form_field_html .popover-body .btn-secondary:hover, .o_field_widget.oe_form_field_html.oe_form_field_html .popover-body .o_radio_hide_bullet label:hover, .o_radio_hide_bullet .o_field_widget.oe_form_field_html.oe_form_field_html .popover-body label:hover, .o_field_widget.oe_form_field_html.oe_form_field_html .popover-body .btn-secondary:focus, .o_field_widget.oe_form_field_html.oe_form_field_html .popover-body .o_radio_hide_bullet label:focus, .o_radio_hide_bullet .o_field_widget.oe_form_field_html.oe_form_field_html .popover-body label:focus, .o_field_widget.oe_form_field_html.oe_form_field_html .popover-body .btn-secondary.focus, .o_field_widget.oe_form_field_html.oe_form_field_html .popover-body .o_radio_hide_bullet label.focus, .o_radio_hide_bullet .o_field_widget.oe_form_field_html.oe_form_field_html .popover-body label.focus {
+  color: #008784;
+}
+
+.o_field_widget.oe_form_field_html.oe_form_field_html .note-toolbar.panel-heading .show .btn-secondary, .o_field_widget.oe_form_field_html.oe_form_field_html .note-toolbar.panel-heading .show .o_radio_hide_bullet label, .o_radio_hide_bullet .o_field_widget.oe_form_field_html.oe_form_field_html .note-toolbar.panel-heading .show label, .o_field_widget.oe_form_field_html.oe_form_field_html .note-toolbar.panel-heading .btn-secondary.active, .o_field_widget.oe_form_field_html.oe_form_field_html .note-toolbar.panel-heading .o_radio_hide_bullet label.active, .o_radio_hide_bullet .o_field_widget.oe_form_field_html.oe_form_field_html .note-toolbar.panel-heading label.active, .o_field_widget.oe_form_field_html.oe_form_field_html .note-toolbar.panel-heading .btn-secondary:focus, .o_field_widget.oe_form_field_html.oe_form_field_html .note-toolbar.panel-heading .o_radio_hide_bullet label:focus, .o_radio_hide_bullet .o_field_widget.oe_form_field_html.oe_form_field_html .note-toolbar.panel-heading label:focus, .o_field_widget.oe_form_field_html.oe_form_field_html .popover-body .show .btn-secondary, .o_field_widget.oe_form_field_html.oe_form_field_html .popover-body .show .o_radio_hide_bullet label, .o_radio_hide_bullet .o_field_widget.oe_form_field_html.oe_form_field_html .popover-body .show label, .o_field_widget.oe_form_field_html.oe_form_field_html .popover-body .btn-secondary.active, .o_field_widget.oe_form_field_html.oe_form_field_html .popover-body .o_radio_hide_bullet label.active, .o_radio_hide_bullet .o_field_widget.oe_form_field_html.oe_form_field_html .popover-body label.active, .o_field_widget.oe_form_field_html.oe_form_field_html .popover-body .btn-secondary:focus, .o_field_widget.oe_form_field_html.oe_form_field_html .popover-body .o_radio_hide_bullet label:focus, .o_radio_hide_bullet .o_field_widget.oe_form_field_html.oe_form_field_html .popover-body label:focus {
+  background: white !important;
+  color: #666666 !important;
+  border-color: #ced4da;
+}
+
+.o_field_widget.oe_form_field_html.oe_form_field_html .note-toolbar.panel-heading .dropdown-menu, .o_field_widget.oe_form_field_html.oe_form_field_html .popover-body .dropdown-menu {
+  margin-top: 0;
+  border-top: none;
+  border-color: #ced4da;
+  background-color: white;
+  box-shadow: none;
+}
+
+.o_field_widget.oe_form_field_html.oe_form_field_html .note-toolbar.panel-heading .dropdown-menu a, .o_field_widget.oe_form_field_html.oe_form_field_html .popover-body .dropdown-menu a {
+  background-color: transparent;
+  color: #666666;
+}
+
+.o_field_widget.oe_form_field_html.oe_form_field_html .note-toolbar.panel-heading .dropdown-menu a:hover, .o_field_widget.oe_form_field_html.oe_form_field_html .popover-body .dropdown-menu a:hover {
+  background-color: #e9ecef;
+}
+
+.o_field_widget.oe_form_field_html.oe_form_field_html .note-toolbar.panel-heading .dropdown-menu.show .btn-secondary, .o_field_widget.oe_form_field_html.oe_form_field_html .note-toolbar.panel-heading .dropdown-menu.show .o_radio_hide_bullet label, .o_radio_hide_bullet .o_field_widget.oe_form_field_html.oe_form_field_html .note-toolbar.panel-heading .dropdown-menu.show label, .o_field_widget.oe_form_field_html.oe_form_field_html .note-toolbar.panel-heading .dropdown-menu .btn-secondary.active, .o_field_widget.oe_form_field_html.oe_form_field_html .note-toolbar.panel-heading .dropdown-menu .o_radio_hide_bullet label.active, .o_radio_hide_bullet .o_field_widget.oe_form_field_html.oe_form_field_html .note-toolbar.panel-heading .dropdown-menu label.active, .o_field_widget.oe_form_field_html.oe_form_field_html .note-toolbar.panel-heading .dropdown-menu .btn-secondary:focus, .o_field_widget.oe_form_field_html.oe_form_field_html .note-toolbar.panel-heading .dropdown-menu .o_radio_hide_bullet label:focus, .o_radio_hide_bullet .o_field_widget.oe_form_field_html.oe_form_field_html .note-toolbar.panel-heading .dropdown-menu label:focus, .o_field_widget.oe_form_field_html.oe_form_field_html .popover-body .dropdown-menu.show .btn-secondary, .o_field_widget.oe_form_field_html.oe_form_field_html .popover-body .dropdown-menu.show .o_radio_hide_bullet label, .o_radio_hide_bullet .o_field_widget.oe_form_field_html.oe_form_field_html .popover-body .dropdown-menu.show label, .o_field_widget.oe_form_field_html.oe_form_field_html .popover-body .dropdown-menu .btn-secondary.active, .o_field_widget.oe_form_field_html.oe_form_field_html .popover-body .dropdown-menu .o_radio_hide_bullet label.active, .o_radio_hide_bullet .o_field_widget.oe_form_field_html.oe_form_field_html .popover-body .dropdown-menu label.active, .o_field_widget.oe_form_field_html.oe_form_field_html .popover-body .dropdown-menu .btn-secondary:focus, .o_field_widget.oe_form_field_html.oe_form_field_html .popover-body .dropdown-menu .o_radio_hide_bullet label:focus, .o_radio_hide_bullet .o_field_widget.oe_form_field_html.oe_form_field_html .popover-body .dropdown-menu label:focus {
+  border: none;
+}
+
+.o_field_widget.oe_form_field_html.oe_form_field_html .note-toolbar.panel-heading .btn-group.show::after, .o_field_widget.oe_form_field_html.oe_form_field_html .popover-body .btn-group.show::after {
+  position: absolute;
+  top: auto;
+  left: 1px;
+  bottom: -1px;
+  right: 1px;
+  height: 1px;
+  background-color: white;
+}
+
+.o_field_many2one input[type="text"]:disabled {
+  background-color: #FFF;
+}
+

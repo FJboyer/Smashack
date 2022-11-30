@@ -1,0 +1,91 @@
+
+.o_web_client .o_searchview.o_mobile_search > .o_mobile_search_content .o_searchview_input_container {
+  display: -webkit-box; display: -webkit-flex; display: flex;
+  padding: 15px 20px 0 20px;
+  position: relative;
+}
+
+.o_web_client .o_searchview.o_mobile_search > .o_mobile_search_content .o_searchview_input_container .o_searchview_input {
+  border-bottom: 1px solid #8f8f8f;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.o_web_client .o_searchview.o_mobile_search > .o_mobile_search_content .o_searchview_input_container .o_searchview_facet {
+  border-radius: 10px;
+  display: -webkit-inline-box; display: -webkit-inline-flex; display: inline-flex;
+  order: 1;
+}
+
+.o_web_client .o_searchview.o_mobile_search > .o_mobile_search_content .o_searchview_input_container .o_searchview_facet .o_searchview_facet_label {
+  border-radius: 2em 0em 0em 2em;
+}
+
+.o_web_client .o_searchview.o_mobile_search > .o_mobile_search_content .o_searchview_input_container .o_searchview_autocomplete {
+  top: 100%;
+}
+
+.o_web_client .o_searchview.o_mobile_search > .o_mobile_search_content .o_searchview_input_container .o_searchview_autocomplete > li {
+  margin: 5px 0px;
+}
+
+.o_web_client .o_searchview.o_mobile_search > .o_mobile_search_content .o_mobile_search_filter {
+  margin: 8px 16px;
+  padding-bottom: 15%;
+  flex: auto;
+}
+
+.o_web_client .o_searchview.o_mobile_search > .o_mobile_search_content .o_mobile_search_filter .o_dropdown {
+  border: solid 1px #aeb9c4;
+  margin: 15px 5px 0px 5px;
+  width: 100%;
+}
+
+.o_web_client .o_searchview.o_mobile_search > .o_mobile_search_content .o_mobile_search_filter .o_dropdown_toggler_btn {
+  text-align: left;
+  width: 100%;
+}
+
+.o_web_client .o_searchview.o_mobile_search > .o_mobile_search_content .o_mobile_search_filter .o_dropdown_toggler_btn:after {
+  display: none;
+}
+
+.o_web_client .o_searchview.o_mobile_search > .o_mobile_search_content .o_mobile_search_filter .dropdown-backdrop {
+  z-index: -1;
+}
+
+.o_web_client .o_searchview.o_mobile_search > .o_mobile_search_content .o_mobile_search_filter .dropdown-menu {
+  border: none;
+  box-shadow: none;
+  color: #6c757d;
+  position: relative !important;
+  transform: translate3d(0, 0, 0) !important;
+  width: 100% !important;
+}
+
+.o_web_client .o_searchview.o_mobile_search > .o_mobile_search_content .o_mobile_search_filter .dropdown-menu .divider {
+  margin: 0px;
+}
+
+@media (max-width: 767.98px) {
+  .o_control_panel.o_mobile_sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: auto;
+    left: auto;
+    bottom: auto;
+    right: auto;
+    z-index: 10;
+  }
+  .o_control_panel .o_cp_today_button {
+    margin-left: auto;
+  }
+  .o_control_panel .o_calendar_button_today {
+    font-size: 0.7em;
+    line-height: 1.9em;
+  }
+  .o_control_panel .o_calendar_button_today > .o_calendar_text {
+    margin-top: 3px;
+  }
+}
+
