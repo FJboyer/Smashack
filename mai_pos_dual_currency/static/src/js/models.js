@@ -32,13 +32,13 @@ odoo.define('mai_pos_dual_currency.models', function(require) {
 				newPaymentline.set_amount(this.get_due());
 				if(payment_method.pago_usd){
 					let price = this.get_due();
-					// if(rate_company > show_currency_rate){
-					// 	price =  show_currency_rate * this.get_due();
-					// }
-					// else if(rate_company < show_currency_rate){
-					// 	price = this.get_due()/rate_company;
-					// }
-					price =  show_currency_rate * this.get_due();
+					if(rate_company > show_currency_rate){
+						price =  show_currency_rate * this.get_due();
+					}
+					else if(rate_company < show_currency_rate){
+						price = this.get_due()/rate_company;
+					}
+
 					newPaymentline.set_usd_amt(price);
 				}
 				this.paymentlines.add(newPaymentline);
