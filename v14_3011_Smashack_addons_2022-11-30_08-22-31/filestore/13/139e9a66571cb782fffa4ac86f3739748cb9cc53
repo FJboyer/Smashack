@@ -1,0 +1,99 @@
+
+@media (min-width: 768px) {
+  .o_searchview {
+    border-bottom: 1px solid #8f8f8f;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .o_searchview {
+    margin-right: 5px;
+    padding-right: 0;
+  }
+}
+
+.o_searchview .o_searchview_facet {
+  border: 1px solid #8f8f8f;
+  background: #f8f9fa;
+  color: #8f8f8f;
+}
+
+@media (max-width: 767.98px) {
+  .o_searchview .o_searchview_facet {
+    -webkit-flex-flow: row wrap; flex-flow: row wrap;
+  }
+}
+
+.o_searchview .o_searchview_facet .o_searchview_facet_label {
+  background-color: #875A7B;
+}
+
+.o_searchview .o_searchview_facet .o_facet_remove:hover {
+  color: #5c5c5c;
+}
+
+.o_searchview .o_searchview_input {
+  border: none;
+  outline: none;
+}
+
+.o_searchview .o_searchview_icon {
+  position: absolute;
+  top: 4px;
+  left: auto;
+  bottom: auto;
+  right: 0;
+}
+
+.o_searchview .o_searchview_autocomplete li.o_selection_focus {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+.o_search_options {
+  margin: auto 0;
+  display: block;
+}
+
+.o_web_client .o_mobile_search {
+  align-items: normal;
+  background-color: white;
+  border: none;
+  bottom: 0;
+  display: -webkit-box; display: -webkit-flex; display: flex;
+  -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; flex-direction: column;
+  left: 0;
+  overflow: auto;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1050;
+}
+
+.o_web_client .o_mobile_search .o_mobile_search_header {
+  background-color: #875A7B;
+  display: -webkit-box; display: -webkit-flex; display: flex;
+  min-height: 46px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.o_web_client .o_mobile_search .o_mobile_search_header .o_mobile_search_button {
+  color: white;
+}
+
+.o_web_client .o_mobile_search .o_mobile_search_header .o_mobile_search_button:active {
+  background-color: #006d6b;
+}
+
+.o_web_client .o_mobile_search .o_mobile_search_content {
+  flex: auto;
+  height: auto;
+  overflow-y: auto;
+  width: 100%;
+}
+
+.o_web_client .o_mobile_search .o_mobile_search_footer {
+  width: 100%;
+}
+

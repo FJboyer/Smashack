@@ -1,0 +1,28 @@
+
+.o_mrp_workorder_gantt .o_gantt_view .o_gantt_row_container .o_gantt_row .o_gantt_cell .o_gantt_pill_wrapper div.o_gantt_pill.decoration-success {
+  background-image: linear-gradient(#28a745, #28a745);
+  background-color: #34ce57;
+}
+
+.o_mrp_workorder_gantt .o_gantt_view .o_gantt_row_container .o_gantt_row .o_gantt_cell .o_gantt_pill_wrapper div.o_gantt_pill.decoration-success:before {
+  content: none;
+}
+
+.o_mrp_workorder_gantt .o_gantt_view .o_gantt_row_container .o_gantt_row .o_gantt_cell .o_gantt_pill_wrapper div.o_gantt_pill.decoration-warning {
+  background-image: linear-gradient(#adb5bd, #adb5bd);
+  background-color: #c9cfd4;
+}
+
+.o_mrp_workorder_gantt .o_gantt_view .o_gantt_row_container .o_gantt_row .o_gantt_cell .o_gantt_pill_wrapper div.o_gantt_pill.decoration-warning:before {
+  content: none;
+}
+
+.o_mrp_workorder_gantt .o_gantt_view .o_gantt_row_container .o_gantt_row .o_gantt_cell .o_gantt_pill_wrapper div.o_gantt_pill.decoration-danger {
+  background-image: linear-gradient(#dc3545, #dc3545);
+  background-color: #e4606d;
+}
+
+.o_mrp_workorder_gantt .o_gantt_view .o_gantt_row_container .o_gantt_row .o_gantt_cell .o_gantt_pill_wrapper div.o_gantt_pill.decoration-danger:before {
+  content: none;
+}
+

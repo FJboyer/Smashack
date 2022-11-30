@@ -1,0 +1,185 @@
+
+.o_home_menu {
+  align-items: center;
+  direction: ltr;
+  display: -webkit-box; display: -webkit-flex; display: flex;
+  -webkit-flex-flow: column nowrap; flex-flow: column nowrap;
+  height: 100%;
+  overflow: auto;
+}
+
+@media (max-width: 767.98px) {
+  .o_home_menu.o_ios_app .o_home_menu_scrollable {
+    width: initial;
+    margin-right: 12px;
+    margin-left: 12px;
+  }
+  .o_home_menu.o_ios_app .o_home_menu_scrollable .o_apps .o_app.o_menuitem {
+    display: -webkit-box; display: -webkit-flex; display: flex;
+    flex: 1 0 100%;
+    margin: 1px 0;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  .o_home_menu.o_ios_app .o_home_menu_scrollable .o_apps .o_app.o_menuitem .o_app_icon {
+    width: 15%;
+    margin: 0 16px;
+  }
+  .o_home_menu.o_ios_app .o_home_menu_scrollable .o_apps .o_app.o_menuitem .o_caption {
+    align-self: center;
+    font-size: 18px;
+  }
+}
+
+.o_home_menu.o_search_hidden .o_home_menu_scrollable > div:first-child {
+  margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+  .o_home_menu.o_search_hidden .o_home_menu_scrollable > div:first-child {
+    margin-top: 90px;
+  }
+}
+
+.o_home_menu .o_home_menu_scrollable {
+  align-items: center;
+  display: -webkit-box; display: -webkit-flex; display: flex;
+  flex: 100%;
+  -webkit-flex-flow: column nowrap; flex-flow: column nowrap;
+  overflow: auto;
+  position: relative;
+  width: 100%;
+}
+
+.o_home_menu .o_home_menu_scrollable .o_apps {
+  display: -webkit-box; display: -webkit-flex; display: flex;
+  -webkit-box-flex: 0; -webkit-flex: 0 0 auto; flex: 0 0 auto;
+  -webkit-flex-flow: row wrap; flex-flow: row wrap;
+  max-width: 850px;
+  width: 100%;
+}
+
+.o_home_menu .o_home_menu_scrollable .o_apps .o_app {
+  padding: 10px 0;
+  text-align: center;
+  width: 33.33333333%;
+}
+
+@media (min-width: 576px) {
+  .o_home_menu .o_home_menu_scrollable .o_apps .o_app {
+    width: 25%;
+  }
+}
+
+@media (min-width: 768px) {
+  .o_home_menu .o_home_menu_scrollable .o_apps .o_app {
+    width: 16.66666667%;
+  }
+}
+
+.o_home_menu .o_home_menu_scrollable .o_apps .o_app .o_app_icon {
+  margin: auto;
+  max-width: 70px;
+  overflow: hidden;
+  position: relative;
+  width: 80%;
+}
+
+.o_home_menu .o_home_menu_scrollable .o_apps .o_app .o_app_icon:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
+.o_home_menu .o_home_menu_scrollable .o_apps .o_app .o_app_icon > i.fa {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  bottom: auto;
+  right: 0;
+}
+
+.o_home_menu .o_home_menu_scrollable .o_apps .o_app .o_caption {
+  margin: 4px 0;
+  display: block;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: top;
+}
+
+.o_home_menu .o_home_menu_scrollable .o_apps .o_app.o_menuitem {
+  margin-left: 0;
+}
+
+.o_home_menu .o_home_menu_scrollable .o_menuitems {
+  -webkit-box-flex: 1; -webkit-flex: 1 0 auto; flex: 1 0 auto;
+  max-width: 850px;
+  width: 100%;
+}
+
+.o_home_menu .o_home_menu_scrollable .o_menuitems .o_menuitem {
+  margin-bottom: 3px;
+  padding: 2px;
+  width: 100%;
+}
+
+@media (max-width: 767.98px) {
+  .o_home_menu .o_home_menu_scrollable .o_menuitems .o_menuitem {
+    padding: 6px;
+  }
+}
+
+.o_home_menu .o_home_menu_scrollable .o_menuitems .o_menuitem:focus, .o_home_menu .o_home_menu_scrollable .o_menuitems .o_menuitem.o_focused {
+  padding-left: 5px;
+}
+
+.o_home_menu .o_home_menu_scrollable .o_no_results {
+  -webkit-box-flex: 1; -webkit-flex: 1 0 auto; flex: 1 0 auto;
+  margin-top: 10px;
+}
+
+.database_expiration_panel {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 768px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .database_expiration_panel {
+    margin: 25px auto 0 auto;
+  }
+}
+
+.database_expiration_panel a > i.fa {
+  margin: 0 0.2em;
+}
+
+@media (max-width: 767.98px) {
+  .database_expiration_panel .oe_instance_register_form .form-group {
+    margin-right: 25px;
+  }
+}
+
+.database_expiration_panel .oe_instance_register_form.vertical-slide-enter, .database_expiration_panel .oe_instance_register_form.vertical-slide-leave-to {
+  max-height: 0;
+  margin-top: 0 !important;
+}
+
+.database_expiration_panel .oe_instance_register_form.vertical-slide-enter-active, .database_expiration_panel .oe_instance_register_form.vertical-slide-leave-active {
+  overflow: hidden;
+  transition-property: max-height, margin-top;
+  transition-duration: 0.4s;
+}
+
+.database_expiration_panel .oe_instance_register_form.vertical-slide-enter-to, .database_expiration_panel .oe_instance_register_form.vertical-slide-leave {
+  max-height: 32px;
+}
+
+@media (max-width: 767.98px) {
+  .database_expiration_panel .oe_instance_register_form.vertical-slide-enter-to, .database_expiration_panel .oe_instance_register_form.vertical-slide-leave {
+    max-height: 72px;
+  }
+}
+
