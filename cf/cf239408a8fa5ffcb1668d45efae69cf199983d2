@@ -1,0 +1,65 @@
+
+@media (max-width: 767.98px) {
+  .o_base_settings {
+    -webkit-flex-flow: column nowrap; flex-flow: column nowrap;
+  }
+  .o_base_settings > .o_control_panel {
+    padding-top: 10px;
+    padding-right: 16px;
+    padding-bottom: 10px;
+    padding-left: 16px;
+  }
+  .o_base_settings .o_setting_container {
+    -webkit-flex-flow: column nowrap; flex-flow: column nowrap;
+  }
+  .o_base_settings .o_setting_container .settings_tab {
+    flex: 0 0 40px;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+    overflow-x: auto;
+    padding: 0;
+    background: #5E5E5E;
+  }
+  .o_base_settings .o_setting_container .settings_tab .tab {
+    display: block;
+    width: auto;
+    height: 40px;
+    padding: 10px 16px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: inherit;
+    transition: 0.2s all ease 0s;
+    transform: translate3d(0, 0, 0);
+  }
+  .o_base_settings .o_setting_container .settings_tab .tab .app_name {
+    display: block;
+    white-space: nowrap;
+    text-transform: uppercase;
+  }
+  .o_base_settings .o_setting_container .settings_tab .tab:after {
+    content: '';
+    background: #00A09D;
+    opacity: 0;
+    position: absolute;
+    top: auto;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 3px;
+    transition: 0.2s all ease 0s;
+  }
+  .o_base_settings .o_setting_container .settings_tab .tab.current {
+    color: white;
+    font-weight: bold;
+    box-shadow: none;
+    background: none;
+  }
+  .o_base_settings .o_setting_container .settings_tab .tab.current:after {
+    opacity: 1;
+  }
+}
+

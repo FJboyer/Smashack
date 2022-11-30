@@ -1,0 +1,30 @@
+
+.o_FormRenderer_chatterContainer.o-aside {
+  border-left: 1px solid;
+  padding: 0;
+  width: 530px;
+}
+
+.o_FormRenderer_chatterContainer.o-isInFormSheetBg:not(.o-aside) {
+  max-width: none;
+  background-color: #FFFFFF;
+  margin-left: -16px;
+  margin-right: -16px;
+}
+
+@media (min-width: 992px) and (max-width: 1533.98px) {
+  .o_FormRenderer_chatterContainer.o-isInFormSheetBg:not(.o-aside) {
+    margin-left: -32px;
+    margin-right: -32px;
+  }
+}
+
+.o_FormRenderer_chatterContainer.o-isInFormSheetBg:not(.o-aside):not(.o-aside) {
+  width: auto;
+  border-top: 1px solid #dee2e6;
+}
+
+.o_FormRenderer_chatterContainer.o-aside {
+  border-left-color: #dee2e6;
+}
+
