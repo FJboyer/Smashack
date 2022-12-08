@@ -36,15 +36,9 @@ odoo.define('mai_pos_dual_currency.CustomPaymentScreen', function(require) {
 				} else {
 					let	price_other_currency = NumberBuffer.getFloat();
 					if(this.selectedPaymentLine.payment_method.pago_usd){
-						// if(rate_company > show_currency_rate){
-						// 	price_other_currency = (price_other_currency * rate_company)/show_currency_rate;
-						// }
-						// else if(rate_company < show_currency_rate){
-						// 	price_other_currency = price_other_currency * rate_company;
-						// }
-						price_other_currency = price_other_currency * show_currency_rate / rate_company;
-
+						price_other_currency = (price_other_currency * rate_company)/show_currency_rate;
 						this.selectedPaymentLine.set_usd_amt(NumberBuffer.getFloat());
+
 					}
 					this.selectedPaymentLine.set_amount(price_other_currency);
 					
